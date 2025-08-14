@@ -67,7 +67,7 @@ Fast loading with minimal dependencies
 
 Accessible navigation
 
-💜 Thank you for visiting my portfolio!
+
 
 <img width="1899" height="886" alt="Image" src="https://github.com/user-attachments/assets/4cbd68d1-f15e-4fa1-a691-fa7638467b6c" />
 
@@ -85,5 +85,9 @@ Accessible navigation
 
 
 <img width="1919" height="876" alt="Image" src="https://github.com/user-attachments/assets/d6e9a57c-8a8c-48cc-b5cd-89ae25c6d45c" />
+
+
+
+💜 Thank you for visiting my portfolio!
      
 
