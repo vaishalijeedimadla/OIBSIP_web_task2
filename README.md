@@ -69,5 +69,7 @@ Accessible navigation
 
 💜 Thank you for visiting my portfolio!
 
+<img width="1899" height="886" alt="Image" src="https://github.com/user-attachments/assets/4cbd68d1-f15e-4fa1-a691-fa7638467b6c" />
+
      
 
