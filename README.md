@@ -1,1 +1,73 @@
 # OIBSIP_web_task2
+
+# Vaishali's Portfolio Website
+
+
+
+## 🌟 Objective
+To create a professional portfolio website showcasing my skills, education, projects, and contact information as a Computer Science student at Mallareddy University. The goal was to build a responsive, modern website that effectively presents my technical abilities and academic journey.
+
+## 🛠️ Steps Performed
+1. Designed a clean, professional layout with dark theme
+2. Implemented responsive navigation with smooth scrolling
+3. Created an "About Me" section with personal introduction
+4. Developed interactive skill progress bars
+5. Built a comprehensive resume section with education and projects
+6. Added a functional contact form
+7. Integrated social media links
+8. Optimized for mobile devices
+
+## 💻 Tools Used
+- HTML5
+- CSS3 (Grid, Flexbox)
+- Font Awesome icons
+- Google Fonts
+- Visual Studio Code (development environment)
+- GitHub (version control and hosting)
+
+## 🎯 Outcome
+A fully responsive portfolio website featuring:
+- Professional dark theme with purple accents
+- Interactive skill progress bars
+- Detailed education and project information
+- Functional contact section
+- Mobile-friendly design
+- Clean, modern aesthetic
+
+## 🚀 How to Install & Run
+This is a static website that requires no server or dependencies. To run locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+2.Navigate to the project directory:
+   cd portfolio
+   
+3.Open the index.html file in your browser:
+
+ Double-click the file in your file explorer, or
+
+ Use your IDE's live server feature, or
+
+ Run a local server (e.g., Python's http.server):
+
+     python -m http.server 8000
+     Then open http://localhost:8000 in your browser
+
+📝 Features
+Responsive design (works on all devices)
+
+Interactive skill progress bars
+
+Clean, professional layout
+
+Easy-to-update structure
+
+Fast loading with minimal dependencies
+
+Accessible navigation
+
+💜 Thank you for visiting my portfolio!
+
+     
+
