@@ -71,5 +71,8 @@ Accessible navigation
 
 <img width="1899" height="886" alt="Image" src="https://github.com/user-attachments/assets/4cbd68d1-f15e-4fa1-a691-fa7638467b6c" />
 
+
+<img width="1905" height="878" alt="Image" src="https://github.com/user-attachments/assets/8e7a7939-ef82-49c9-bdd6-f8730d893358" />
+
      
 
