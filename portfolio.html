@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishali's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #2d3436;
+            --dark-color: #1a1a1a;
+            --light-color: #f4f4f4;
+            --gray-color: #777;
+            --success-color: #00b894;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--light-color);
+            background-color: var(--dark-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--secondary-color);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        nav {
+            background: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 1rem 2rem;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section.dark {
+            background: var(--secondary-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .about-img {
+            flex: 1;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill {
+            margin-bottom: 1.5rem;
+        }
+
+        .progress-bar {
+            background: var(--gray-color);
+            height: 20px;
+            border-radius: 10px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        .progress {
+            background: var(--primary-color);
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            font-size: 0.8rem;
+            color: white;
+            transition: width 1s ease-in-out;
+        }
+
+        .resume-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .item {
+            margin-bottom: 2rem;
+        }
+
+        .item p {
+            color: var(--gray-color);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .item ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .item ul li {
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--light-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--light-color);
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #5649c0;
+            transform: translateY(-3px);
+        }
+
+        .download-btn {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content,
+            .resume-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>Computer Science Student | Aspiring Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="piccc.jpeg" alt="Vaishali's Profile Picture">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Vaishali, a passionate Computer Science student currently in my 2nd year at Mallareddy University. I'm enthusiastic about technology and constantly working to expand my knowledge in programming and web development.</p>
+                    <p>As a student, I'm actively involved in various coding competitions and tech events at my university. I enjoy solving problems and building projects that can make a difference. My goal is to become a full-stack developer and contribute to innovative solutions that can help society.</p>
+                    <p>When I'm not studying or coding, you can find me reading tech blogs, participating in hackathons, or mentoring junior students in programming fundamentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section dark">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS3</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%">75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%">65%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>C Programming</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="item">
+                        <h4>Bachelor of Technology in Computer Science</h4>
+                        <p>Mallareddy University | 2022 - Present</p>
+                        <ul>
+                            <li>Current CGPA: 8.7/10</li>
+                            <li>Member of Coding Club</li>
+                            <li>Participated in several hackathons</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Intermediate (12th Grade)</h4>
+                        <p>Narayana Junior College | 2020 - 2022</p>
+                        <ul>
+                            <li>Percentage: 92%</li>
+                            <li>Specialized in MPC (Maths, Physics, Chemistry)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>Projects & Experience</h3>
+                    <div class="item">
+                        <h4>E-Commerce Website</h4>
+                        <p>Personal Project | 2023</p>
+                        <ul>
+                            <li>Developed a responsive e-commerce site using HTML, CSS, and JavaScript</li>
+                            <li>Implemented cart functionality and product filtering</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Student Management System</h4>
+                        <p>University Project | 2023</p>
+                        <ul>
+                            <li>Created using Java and MySQL</li>
+                            <li>Features include attendance tracking and grade management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="download-btn">
+                <a href="#" class="btn">Download Full Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section dark">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> vaishali@example.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Vaishali. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
